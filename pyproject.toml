@@ -1,0 +1,20 @@
+[project]
+name = "personal-finance-tracker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "questionary>=2.1.1",
+    "rich>=14.2.0",
+    "streamlit",
+    "pandas",
+    "python-dateutil",
+    "ruff",
+    "plotly",
+    "narwhals",
+]
+
+[tool.setuptools.packages.find]
+where = ["."] # Search in the current directory
+include = ["features*", "utils*"] # Explicitly include features and utils
